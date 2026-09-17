@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.otf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="hjk-l7-xOc" customClass="SearchCitiesCell" customModule="EzyAirline" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hjk-l7-xOc" id="gQc-dn-qKc">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H28-Ma-kR1" customClass="CRView" customModule="EzyAirline" customModuleProvider="target">
+                        <rect key="frame" x="20" y="6" width="280" height="59"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVk-sO-xvv">
+                                <rect key="frame" x="12" y="12" width="256" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                <color key="textColor" red="0.16078431369999999" green="0.20000000000000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DVk-sO-xvv" firstAttribute="leading" secondItem="H28-Ma-kR1" secondAttribute="leading" constant="12" id="TjG-bH-JPz"/>
+                            <constraint firstItem="DVk-sO-xvv" firstAttribute="top" secondItem="H28-Ma-kR1" secondAttribute="top" constant="12" id="Xxi-lX-9x9"/>
+                            <constraint firstAttribute="trailing" secondItem="DVk-sO-xvv" secondAttribute="trailing" constant="12" id="Y6Z-Dl-HMI"/>
+                            <constraint firstAttribute="bottom" secondItem="DVk-sO-xvv" secondAttribute="bottom" constant="12" id="sih-Bk-1Rg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666669999997" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="H28-Ma-kR1" firstAttribute="top" secondItem="gQc-dn-qKc" secondAttribute="top" constant="6" id="0sr-Eh-49s"/>
+                    <constraint firstItem="H28-Ma-kR1" firstAttribute="leading" secondItem="gQc-dn-qKc" secondAttribute="leading" constant="20" id="GIg-Cz-uaO"/>
+                    <constraint firstAttribute="bottom" secondItem="H28-Ma-kR1" secondAttribute="bottom" constant="6" id="nHF-os-5EL"/>
+                    <constraint firstAttribute="trailing" secondItem="H28-Ma-kR1" secondAttribute="trailing" constant="20" id="vom-Og-yho"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="kV2-Kp-1Jl"/>
+            <connections>
+                <outlet property="lbl_citiesName" destination="DVk-sO-xvv" id="5ef-69-8g9"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="156.36160714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

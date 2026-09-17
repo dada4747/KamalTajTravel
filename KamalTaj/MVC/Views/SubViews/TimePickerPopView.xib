@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="TimePickerPopView" id="iN0-l3-epB" customClass="TimePickerPopView" customModule="KamalTaj" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owj-ML-Ap8" customClass="CardView" customModule="KamalTaj" customModuleProvider="target">
+                    <rect key="frame" x="50" y="275" width="293" height="302"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="AuV-3Q-UXJ">
+                            <rect key="frame" x="16" y="16" width="261" height="216"/>
+                            <color key="tintColor" name="clr_secondary"/>
+                            <locale key="locale" localeIdentifier="en"/>
+                        </datePicker>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="WX4-Vq-K20">
+                            <rect key="frame" x="98" y="247" width="185" height="40"/>
+                            <subviews>
+                                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sX6-Md-hfy" customClass="CRButton" customModule="KamalTaj" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="MEn-uL-aQj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" name="clr_secondary"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" name="clr_secondary"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="cancelAndDoneClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="7WG-2b-G52"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NMq-Kd-pjs" customClass="CRButton" customModule="KamalTaj" customModuleProvider="target">
+                                    <rect key="frame" x="105" y="0.0" width="80" height="40"/>
+                                    <color key="backgroundColor" name="clr_secondary"/>
+                                    <state key="normal">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="Set">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="cancelAndDoneClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="dfA-f3-VP9"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="3bW-qe-m0k"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="WX4-Vq-K20" firstAttribute="top" secondItem="AuV-3Q-UXJ" secondAttribute="bottom" constant="15" id="185-76-DS7"/>
+                        <constraint firstItem="AuV-3Q-UXJ" firstAttribute="top" secondItem="owj-ML-Ap8" secondAttribute="top" constant="16" id="2P2-yj-uWm"/>
+                        <constraint firstAttribute="trailing" secondItem="AuV-3Q-UXJ" secondAttribute="trailing" constant="16" id="57m-rv-dH0"/>
+                        <constraint firstAttribute="bottom" secondItem="WX4-Vq-K20" secondAttribute="bottom" constant="15" id="89y-uM-kmg"/>
+                        <constraint firstItem="AuV-3Q-UXJ" firstAttribute="leading" secondItem="owj-ML-Ap8" secondAttribute="leading" constant="16" id="NfG-d0-Qbp"/>
+                        <constraint firstAttribute="trailing" secondItem="WX4-Vq-K20" secondAttribute="trailing" constant="10" id="a2R-MN-T8g"/>
+                        <constraint firstAttribute="height" priority="250" constant="240" id="cGH-4W-3yG"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="owj-ML-Ap8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="0gg-LX-1O0"/>
+                <constraint firstItem="owj-ML-Ap8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="lFV-xt-6U7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="owj-ML-Ap8" secondAttribute="trailing" constant="50" id="pzA-dy-EUb"/>
+            </constraints>
+            <connections>
+                <outlet property="timePicker" destination="AuV-3Q-UXJ" id="llf-p8-lEL"/>
+                <outlet property="view_header" destination="owj-ML-Ap8" id="NF4-Ur-yR4"/>
+            </connections>
+            <point key="canvasLocation" x="-22" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="clr_secondary">
+            <color red="0.73333333333333328" green="0.023529411764705882" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

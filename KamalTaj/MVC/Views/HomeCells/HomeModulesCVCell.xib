@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Bnu-Xh-hGT" customClass="HomeModulesCVCell" customModule="PuranTrip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oeN-sI-Tch">
+                        <rect key="frame" x="0.0" y="0.0" width="336" height="72"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tgj-Bd-TuE" customClass="CRView" customModule="PuranTrip" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="336" height="72"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2A4-mO-nAz">
+                                        <rect key="frame" x="93" y="6" width="150.5" height="60"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_flight_module" translatesAutoresizingMaskIntoConstraints="NO" id="mae-lM-Zgp">
+                                                <rect key="frame" x="0.0" y="16" width="28" height="28"/>
+                                                <color key="tintColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="Gnv-d4-CIC"/>
+                                                    <constraint firstAttribute="width" constant="28" id="TVv-CA-xT1"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Private Charter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXB-Rz-PqY">
+                                                <rect key="frame" x="36" y="20" width="114.5" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="zHA-ka-9vr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansSyriac-Regular_SemiBold" family="Noto Sans Syriac" pointSize="16"/>
+                                                <color key="textColor" red="0.16078431372549018" green="0.16078431372549018" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.54117647059999996" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="2A4-mO-nAz" firstAttribute="top" secondItem="Tgj-Bd-TuE" secondAttribute="top" constant="6" id="LJj-ZP-smX"/>
+                                    <constraint firstAttribute="bottom" secondItem="2A4-mO-nAz" secondAttribute="bottom" constant="6" id="Ldt-Cv-BDz"/>
+                                    <constraint firstItem="2A4-mO-nAz" firstAttribute="centerX" secondItem="Tgj-Bd-TuE" secondAttribute="centerX" id="Ml9-es-g5n"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tgj-Bd-TuE" firstAttribute="leading" secondItem="oeN-sI-Tch" secondAttribute="leading" id="EMc-E9-bf5"/>
+                            <constraint firstItem="Tgj-Bd-TuE" firstAttribute="top" secondItem="oeN-sI-Tch" secondAttribute="top" id="Tvg-UG-ubm"/>
+                            <constraint firstAttribute="trailing" secondItem="Tgj-Bd-TuE" secondAttribute="trailing" id="WhZ-JU-5nw"/>
+                            <constraint firstAttribute="bottom" secondItem="Tgj-Bd-TuE" secondAttribute="bottom" id="a3c-Oo-eQd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="AaE-hj-Xe0"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="oeN-sI-Tch" secondAttribute="bottom" id="JAP-74-HZo"/>
+                <constraint firstItem="oeN-sI-Tch" firstAttribute="leading" secondItem="Bnu-Xh-hGT" secondAttribute="leading" id="Ys8-ae-j12"/>
+                <constraint firstItem="oeN-sI-Tch" firstAttribute="top" secondItem="Bnu-Xh-hGT" secondAttribute="top" id="imJ-eb-Piv"/>
+                <constraint firstAttribute="trailing" secondItem="oeN-sI-Tch" secondAttribute="trailing" id="oUv-pg-2mz"/>
+            </constraints>
+            <size key="customSize" width="336" height="72"/>
+            <connections>
+                <outlet property="img_icon" destination="mae-lM-Zgp" id="2Uh-si-lsN"/>
+                <outlet property="lbl_title" destination="dXB-Rz-PqY" id="XEh-GW-IdO"/>
+                <outlet property="view_underline" destination="Tgj-Bd-TuE" id="tYI-fN-KZh"/>
+            </connections>
+            <point key="canvasLocation" x="262.31884057971018" y="91.071428571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_flight_module" width="60" height="60"/>
+    </resources>
+</document>

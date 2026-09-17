@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.otf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="CalendarPopView" id="2oG-fX-KhI" customClass="CalendarPopView" customModule="Dreamora" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIn-qr-pa1">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df3-cx-NBC">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="calenderHiddenClicked:" destination="2oG-fX-KhI" eventType="touchUpInside" id="GiK-ye-uJN"/>
+                            </connections>
+                        </button>
+                        <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gvb-YI-yb3" customClass="CardView" customModule="Dreamora" customModuleProvider="target">
+                            <rect key="frame" x="46.666666666666657" y="251" width="300" height="350"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 July 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlZ-WN-DWc">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="45"/>
+                                    <color key="backgroundColor" red="0.7843137255" green="0.13725490200000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="45z-ox-P7u"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUO-C6-91i" customClass="JTHorizontalCalendarView">
+                                    <rect key="frame" x="0.0" y="45" width="300" height="260"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkG-aA-P1L">
+                                    <rect key="frame" x="0.0" y="305" width="300" height="45"/>
+                                    <color key="backgroundColor" red="0.28627450980000002" green="0.38823529410000002" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="7Nx-Zc-TE3"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                    <state key="normal" title="SET">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="calendarDateSetClicked:" destination="2oG-fX-KhI" eventType="touchUpInside" id="2kr-OE-tY9"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gm-Kh-itd">
+                                    <rect key="frame" x="245" y="0.0" width="45" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="YyG-vi-SlK"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title=" ">
+                                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <imageReference key="image" image="ic_forword" symbolScale="large"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="calendarNextPreviousMonthClicked:" destination="2oG-fX-KhI" eventType="touchUpInside" id="fy9-SY-dk0"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ym6-vg-Aoe">
+                                    <rect key="frame" x="10" y="0.0" width="45" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="Wbg-I9-B43"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title=" ">
+                                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <imageReference key="image" image="ic_back" symbolScale="large"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="calendarNextPreviousMonthClicked:" destination="2oG-fX-KhI" eventType="touchUpInside" id="xxh-Kj-132"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="ym6-vg-Aoe" firstAttribute="leading" secondItem="Gvb-YI-yb3" secondAttribute="leading" constant="10" id="B55-lP-WMz"/>
+                                <constraint firstItem="ym6-vg-Aoe" firstAttribute="top" secondItem="Gvb-YI-yb3" secondAttribute="top" id="GYw-a5-nDT"/>
+                                <constraint firstItem="9Gm-Kh-itd" firstAttribute="top" secondItem="Gvb-YI-yb3" secondAttribute="top" id="JJH-qm-B6Q"/>
+                                <constraint firstAttribute="width" constant="300" id="LCi-ZM-Y1M"/>
+                                <constraint firstAttribute="trailing" secondItem="WkG-aA-P1L" secondAttribute="trailing" id="PGJ-Dr-ZiW"/>
+                                <constraint firstItem="WkG-aA-P1L" firstAttribute="top" secondItem="cUO-C6-91i" secondAttribute="bottom" id="POB-bK-JQc"/>
+                                <constraint firstAttribute="trailing" secondItem="cUO-C6-91i" secondAttribute="trailing" id="QT4-33-AUV"/>
+                                <constraint firstItem="cUO-C6-91i" firstAttribute="leading" secondItem="Gvb-YI-yb3" secondAttribute="leading" id="RXA-du-FfY"/>
+                                <constraint firstItem="WkG-aA-P1L" firstAttribute="leading" secondItem="Gvb-YI-yb3" secondAttribute="leading" id="TD1-eC-Z9r"/>
+                                <constraint firstItem="cUO-C6-91i" firstAttribute="top" secondItem="vlZ-WN-DWc" secondAttribute="bottom" id="TWM-Gv-wVa"/>
+                                <constraint firstAttribute="bottom" secondItem="WkG-aA-P1L" secondAttribute="bottom" id="VKv-UV-Cmg"/>
+                                <constraint firstItem="cUO-C6-91i" firstAttribute="top" secondItem="ym6-vg-Aoe" secondAttribute="bottom" id="YZ4-Se-GCF"/>
+                                <constraint firstAttribute="height" constant="350" id="ZYa-DP-guw"/>
+                                <constraint firstItem="cUO-C6-91i" firstAttribute="top" secondItem="9Gm-Kh-itd" secondAttribute="bottom" id="gfu-64-Yn3"/>
+                                <constraint firstItem="vlZ-WN-DWc" firstAttribute="top" secondItem="Gvb-YI-yb3" secondAttribute="top" id="iQO-ej-UN0"/>
+                                <constraint firstAttribute="trailing" secondItem="9Gm-Kh-itd" secondAttribute="trailing" constant="10" id="ien-dx-gp3"/>
+                                <constraint firstItem="vlZ-WN-DWc" firstAttribute="leading" secondItem="Gvb-YI-yb3" secondAttribute="leading" id="yCE-1g-AcL"/>
+                                <constraint firstAttribute="trailing" secondItem="vlZ-WN-DWc" secondAttribute="trailing" id="yGn-DU-8bn"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="pH3-PQ-CLb"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Gvb-YI-yb3" firstAttribute="centerX" secondItem="dIn-qr-pa1" secondAttribute="centerX" id="6yW-i2-7Ri"/>
+                        <constraint firstItem="df3-cx-NBC" firstAttribute="trailing" secondItem="pH3-PQ-CLb" secondAttribute="trailing" id="Ra6-Fd-Oh5"/>
+                        <constraint firstItem="df3-cx-NBC" firstAttribute="bottom" secondItem="pH3-PQ-CLb" secondAttribute="bottom" id="cgN-fj-VOn"/>
+                        <constraint firstItem="df3-cx-NBC" firstAttribute="leading" secondItem="pH3-PQ-CLb" secondAttribute="leading" id="gdd-e5-0wl"/>
+                        <constraint firstItem="Gvb-YI-yb3" firstAttribute="centerY" secondItem="dIn-qr-pa1" secondAttribute="centerY" id="qG6-x5-pCI"/>
+                        <constraint firstItem="df3-cx-NBC" firstAttribute="top" secondItem="dIn-qr-pa1" secondAttribute="top" id="qZr-Yg-eTF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="8Bv-PI-RR5"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dIn-qr-pa1" firstAttribute="leading" secondItem="8Bv-PI-RR5" secondAttribute="leading" id="0Ug-jN-aQ3"/>
+                <constraint firstItem="dIn-qr-pa1" firstAttribute="trailing" secondItem="8Bv-PI-RR5" secondAttribute="trailing" id="Omc-al-6bv"/>
+                <constraint firstItem="dIn-qr-pa1" firstAttribute="top" secondItem="2oG-fX-KhI" secondAttribute="top" id="W9s-8e-LVA"/>
+                <constraint firstItem="dIn-qr-pa1" firstAttribute="bottom" secondItem="2oG-fX-KhI" secondAttribute="bottom" id="oaf-KG-i6Q"/>
+            </constraints>
+            <connections>
+                <outlet property="btn_leftLoc" destination="ym6-vg-Aoe" id="m4v-Qk-qSx"/>
+                <outlet property="btn_setLoc" destination="WkG-aA-P1L" id="85F-tW-5Xh"/>
+                <outlet property="lbl_calendarTitle" destination="vlZ-WN-DWc" id="fWD-dC-OTD"/>
+                <outlet property="view_JBCalendar" destination="cUO-C6-91i" id="8si-Cf-zMR"/>
+            </connections>
+            <point key="canvasLocation" x="79" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back" width="18" height="15"/>
+        <image name="ic_forword" width="18" height="15"/>
+    </resources>
+</document>

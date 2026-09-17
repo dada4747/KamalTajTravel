@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AmenitiesCVCell" id="gTV-IL-0wX" customClass="AmenitiesCVCell" customModule="EzyAirline" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQT-UQ-pMX">
+                        <rect key="frame" x="0.0" y="0.0" width="190" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free Wi-Fi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1w-Sc-pOI">
+                                <rect key="frame" x="39" y="0.0" width="151" height="50"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_wifi" translatesAutoresizingMaskIntoConstraints="NO" id="Idb-gP-2iV">
+                                <rect key="frame" x="0.0" y="15.666666666666666" width="19" height="18.666666666666679"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18.899999999999999" id="GI1-kO-hp6"/>
+                                    <constraint firstAttribute="height" constant="18.899999999999999" id="dc4-Bp-CLD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="N1w-Sc-pOI" secondAttribute="trailing" id="0AL-Dw-BDk"/>
+                            <constraint firstItem="Idb-gP-2iV" firstAttribute="centerY" secondItem="mQT-UQ-pMX" secondAttribute="centerY" id="4Vw-ig-jlh"/>
+                            <constraint firstItem="Idb-gP-2iV" firstAttribute="leading" secondItem="mQT-UQ-pMX" secondAttribute="leading" id="6wA-R1-N0h"/>
+                            <constraint firstAttribute="height" constant="50" id="Lmk-OU-Cns"/>
+                            <constraint firstAttribute="bottom" secondItem="N1w-Sc-pOI" secondAttribute="bottom" id="jgJ-uI-Xcq"/>
+                            <constraint firstItem="N1w-Sc-pOI" firstAttribute="top" secondItem="mQT-UQ-pMX" secondAttribute="top" id="wHw-Lf-ehK"/>
+                            <constraint firstItem="N1w-Sc-pOI" firstAttribute="leading" secondItem="Idb-gP-2iV" secondAttribute="trailing" constant="20" id="yzr-rb-COH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mQT-UQ-pMX" secondAttribute="trailing" id="Fc7-ra-1YP"/>
+                <constraint firstItem="mQT-UQ-pMX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FcD-pG-UpJ"/>
+                <constraint firstItem="mQT-UQ-pMX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="llR-79-faI"/>
+                <constraint firstAttribute="bottom" secondItem="mQT-UQ-pMX" secondAttribute="bottom" id="mX0-wz-qde"/>
+            </constraints>
+            <size key="customSize" width="190" height="50"/>
+            <connections>
+                <outlet property="img_emenities" destination="Idb-gP-2iV" id="1Ae-JC-EiO"/>
+                <outlet property="lbl_amenities" destination="N1w-Sc-pOI" id="hc7-0f-OrH"/>
+            </connections>
+            <point key="canvasLocation" x="-19.847328244274809" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_wifi" width="182" height="142"/>
+    </resources>
+</document>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FStopsHeaderCell" id="G4A-kp-aWo" customClass="FStopsHeaderCell" customModule="KamalTaj" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G4A-kp-aWo" id="xtG-8t-3y1">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLK-bd-zQE">
+                        <rect key="frame" x="8" y="0.0" width="398" height="66"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OUj-IG-wDn">
+                                <rect key="frame" x="6" y="8" width="386" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFq-NU-b4V" customClass="CustomFontLabel" customModule="KamalTaj" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="29.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="NotoSansSyriac-Regular_Medium" family="Noto Sans Syriac" pointSize="16"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NotoSans-Medium"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Gnx-nv-azD">
+                                        <rect key="frame" x="35.5" y="5" width="14" height="14"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="BEV-Jr-cso"/>
+                                            <constraint firstAttribute="width" constant="14" id="QXc-eP-1XL"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAA" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnw-R5-VYO" customClass="CustomFontLabel" customModule="KamalTaj" customModuleProvider="target">
+                                        <rect key="frame" x="55.5" y="0.0" width="36.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="NotoSansSyriac-Regular_Medium" family="Noto Sans Syriac" pointSize="16"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NotoSans-Medium"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="AFq-NU-b4V" firstAttribute="leading" secondItem="OUj-IG-wDn" secondAttribute="leading" id="KdS-DC-K9t"/>
+                                    <constraint firstAttribute="height" constant="24" id="Oix-1M-ZdU"/>
+                                    <constraint firstItem="Mnw-R5-VYO" firstAttribute="leading" secondItem="Gnx-nv-azD" secondAttribute="trailing" constant="6" id="Zhi-xT-MB8"/>
+                                    <constraint firstItem="AFq-NU-b4V" firstAttribute="top" secondItem="OUj-IG-wDn" secondAttribute="top" id="ivG-iL-Z7d"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mnw-R5-VYO" secondAttribute="bottom" id="lyR-4i-aVv"/>
+                                    <constraint firstItem="Gnx-nv-azD" firstAttribute="leading" secondItem="AFq-NU-b4V" secondAttribute="trailing" constant="6" id="mZl-IF-aTR"/>
+                                    <constraint firstAttribute="bottom" secondItem="AFq-NU-b4V" secondAttribute="bottom" id="mx4-Op-g96"/>
+                                    <constraint firstItem="Gnx-nv-azD" firstAttribute="centerY" secondItem="OUj-IG-wDn" secondAttribute="centerY" id="na9-aI-bJZ"/>
+                                    <constraint firstItem="Mnw-R5-VYO" firstAttribute="top" secondItem="OUj-IG-wDn" secondAttribute="top" id="zTT-TI-1eK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iU9-x1-5b9">
+                                <rect key="frame" x="6" y="40" width="386" height="26"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ddC-0s-IH1">
+                                        <rect key="frame" x="0.0" y="0.0" width="386" height="18"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05 Jul 2024" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIi-T5-a5C" customClass="CustomFontLabel" customModule="KamalTaj" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="67.5" height="18"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NotoSans-Regular"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUG-tL-VYO" customClass="CRLabel" customModule="KamalTaj" customModuleProvider="target">
+                                                <rect key="frame" x="70.5" y="7" width="4" height="4"/>
+                                                <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="4" id="4t6-2g-vlQ"/>
+                                                    <constraint firstAttribute="height" constant="4" id="Hsd-tT-KVD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="1.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 stop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7be-Iz-vdP" customClass="CustomFontLabel" customModule="KamalTaj" customModuleProvider="target">
+                                                <rect key="frame" x="77.5" y="0.0" width="37.5" height="18"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NotoSans-Regular"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0n-y6-kty" customClass="CRLabel" customModule="KamalTaj" customModuleProvider="target">
+                                                <rect key="frame" x="118" y="7" width="4" height="4"/>
+                                                <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="4" id="D2o-lS-gos"/>
+                                                    <constraint firstAttribute="height" constant="4" id="FdI-6x-X9G"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="1.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Passengers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3B-JF-ywZ" customClass="CustomFontLabel" customModule="KamalTaj" customModuleProvider="target">
+                                                <rect key="frame" x="125" y="0.0" width="79.5" height="18"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NotoSans-Regular"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qM-ZN-S0y" customClass="CRLabel" customModule="KamalTaj" customModuleProvider="target">
+                                                <rect key="frame" x="207.5" y="7" width="4" height="4"/>
+                                                <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="4" id="SVa-aT-aBV"/>
+                                                    <constraint firstAttribute="height" constant="4" id="VK0-hP-AaV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="1.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24hrs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8D6-Oz-yab" customClass="CustomFontLabel" customModule="KamalTaj" customModuleProvider="target">
+                                                <rect key="frame" x="214.5" y="0.5" width="33" height="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NotoSans-Regular"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lig-qW-h0y" customClass="CRLabel" customModule="KamalTaj" customModuleProvider="target">
+                                                <rect key="frame" x="250.5" y="7" width="4" height="4"/>
+                                                <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="4" id="Arl-QB-r2B"/>
+                                                    <constraint firstAttribute="height" constant="4" id="dNt-hI-cVM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="1.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" text="Economy" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="xqU-fn-jlP" customClass="CustomFontLabel" customModule="KamalTaj" customModuleProvider="target">
+                                                <rect key="frame" x="257.5" y="0.5" width="128.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="NotoSans-Regular"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="S3B-JF-ywZ" firstAttribute="top" secondItem="ddC-0s-IH1" secondAttribute="top" id="2MB-F5-rC8"/>
+                                            <constraint firstAttribute="bottom" secondItem="oIi-T5-a5C" secondAttribute="bottom" id="EU3-lK-1Te"/>
+                                            <constraint firstAttribute="bottom" secondItem="S3B-JF-ywZ" secondAttribute="bottom" id="NRt-Ud-Hkz"/>
+                                            <constraint firstItem="oIi-T5-a5C" firstAttribute="leading" secondItem="ddC-0s-IH1" secondAttribute="leading" id="QNR-ux-Sb7"/>
+                                            <constraint firstItem="oIi-T5-a5C" firstAttribute="top" secondItem="ddC-0s-IH1" secondAttribute="top" id="TZu-rr-dqH"/>
+                                            <constraint firstAttribute="trailing" secondItem="xqU-fn-jlP" secondAttribute="trailing" id="W3K-3P-dqn"/>
+                                            <constraint firstAttribute="bottom" secondItem="7be-Iz-vdP" secondAttribute="bottom" id="e9U-bp-Nck"/>
+                                            <constraint firstItem="7be-Iz-vdP" firstAttribute="top" secondItem="ddC-0s-IH1" secondAttribute="top" id="v9X-Kd-30C"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ddC-0s-IH1" secondAttribute="bottom" constant="8" id="4DB-HF-PQd"/>
+                                    <constraint firstAttribute="trailing" secondItem="ddC-0s-IH1" secondAttribute="trailing" id="9SR-uK-XDz"/>
+                                    <constraint firstItem="ddC-0s-IH1" firstAttribute="top" secondItem="iU9-x1-5b9" secondAttribute="top" id="I2D-Go-4Nj"/>
+                                    <constraint firstItem="ddC-0s-IH1" firstAttribute="leading" secondItem="iU9-x1-5b9" secondAttribute="leading" id="ViP-IE-pcp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73333333333333328" green="0.023529411764705882" blue="0.039215686274509803" alpha="0.055285492180549782" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iU9-x1-5b9" firstAttribute="leading" secondItem="BLK-bd-zQE" secondAttribute="leading" constant="6" id="DYr-xg-DI6"/>
+                            <constraint firstAttribute="trailing" secondItem="iU9-x1-5b9" secondAttribute="trailing" constant="6" id="ERv-bY-SwQ"/>
+                            <constraint firstAttribute="bottom" secondItem="iU9-x1-5b9" secondAttribute="bottom" id="Qst-DT-EVd"/>
+                            <constraint firstAttribute="trailing" secondItem="OUj-IG-wDn" secondAttribute="trailing" constant="6" id="Tjk-g2-T3l"/>
+                            <constraint firstItem="iU9-x1-5b9" firstAttribute="top" secondItem="OUj-IG-wDn" secondAttribute="bottom" constant="8" id="XTh-gW-7xP"/>
+                            <constraint firstItem="OUj-IG-wDn" firstAttribute="top" secondItem="BLK-bd-zQE" secondAttribute="top" constant="8" id="lz4-qX-MMl"/>
+                            <constraint firstItem="OUj-IG-wDn" firstAttribute="leading" secondItem="BLK-bd-zQE" secondAttribute="leading" constant="6" id="nd6-Y8-1o1"/>
+                            <constraint firstAttribute="height" constant="66" id="xYQ-pT-PyD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="BLK-bd-zQE" firstAttribute="top" secondItem="xtG-8t-3y1" secondAttribute="top" id="JOi-qn-bD2"/>
+                    <constraint firstAttribute="trailing" secondItem="BLK-bd-zQE" secondAttribute="trailing" constant="8" id="NlM-bf-lNf"/>
+                    <constraint firstItem="BLK-bd-zQE" firstAttribute="leading" secondItem="xtG-8t-3y1" secondAttribute="leading" constant="8" id="c7f-Xe-tFZ"/>
+                    <constraint firstAttribute="bottom" secondItem="BLK-bd-zQE" secondAttribute="bottom" id="fWx-Ph-vmo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgview" destination="BLK-bd-zQE" id="a72-Mq-pIn"/>
+                <outlet property="lbl_duration" destination="8D6-Oz-yab" id="fd5-Ic-dXp"/>
+                <outlet property="lbl_fromCity" destination="AFq-NU-b4V" id="1un-1H-ltM"/>
+                <outlet property="lbl_journeyDate" destination="oIi-T5-a5C" id="BOZ-EY-Cl3"/>
+                <outlet property="lbl_journeyType" destination="xqU-fn-jlP" id="ln8-SV-tpW"/>
+                <outlet property="lbl_noofPassengers" destination="S3B-JF-ywZ" id="ekI-Xm-PVx"/>
+                <outlet property="lbl_noofStops" destination="7be-Iz-vdP" id="MAn-QK-2o6"/>
+                <outlet property="lbl_toCity" destination="Mnw-R5-VYO" id="b7k-qb-Sd3"/>
+            </connections>
+            <point key="canvasLocation" x="202.89855072463769" y="114.84375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_right_arrow" width="28" height="28"/>
+    </resources>
+</document>
