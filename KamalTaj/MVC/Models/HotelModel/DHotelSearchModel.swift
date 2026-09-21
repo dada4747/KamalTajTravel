@@ -144,10 +144,10 @@ struct DHotelSearchItem {
             self.hotel_code = hotelCode
         }
         if let latitude = details["Latitude"] as? String {
-            self.latitude = Double(latitude)!
+            self.latitude = Double(latitude) ?? 0.0
         }
         if let longitude = details["Longitude"] as? String {
-            self.longitude = Double(longitude)!
+            self.longitude = Double(longitude) ?? 0.0
         }
         // hotel image, address, location...
         if let hotelImg = details["HotelPicture"] as? String {

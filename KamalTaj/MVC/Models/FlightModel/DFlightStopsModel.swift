@@ -35,8 +35,8 @@ struct DFlightStopsModel {
         PassengerBreakupModel.passengerFare_array.removeAll()
         
         // clear final break up...
-        FinalBreakupModel.currency = "INR"
-        FinalBreakupModel.currencySymbol = "INR"
+        FinalBreakupModel.currency = "USD"
+        FinalBreakupModel.currencySymbol = "USD"
         FinalBreakupModel.convenienceFare = 0.0
         FinalBreakupModel.baseFare = 0.0
         FinalBreakupModel.discount = 0.0

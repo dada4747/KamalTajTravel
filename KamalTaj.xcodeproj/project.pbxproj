@@ -444,25 +444,6 @@
 		B71834982D93D0FE00B5F9CC /* SelectRoomListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71834972D93D0FE00B5F9CC /* SelectRoomListVC.swift */; };
 		B72168AB2EE018E700E86F16 /* FBookingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72168A92EE018E700E86F16 /* FBookingCell.swift */; };
 		B72168AC2EE018E700E86F16 /* FBookingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72168AA2EE018E700E86F16 /* FBookingCell.xib */; };
-		B7228CBD2F92085E003D2158 /* DBusFilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7228CB92F92085E003D2158 /* DBusFilterModel.swift */; };
-		B7228CBE2F92085E003D2158 /* DBTravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7228CB62F92085E003D2158 /* DBTravelModel.swift */; };
-		B7228CBF2F92085E003D2158 /* DBusesSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7228CB82F92085E003D2158 /* DBusesSearchModel.swift */; };
-		B7228CC02F92085E003D2158 /* DBusResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7228CBA2F92085E003D2158 /* DBusResultModel.swift */; };
-		B7228CCC2F92086C003D2158 /* BSearchListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7228CC42F92086C003D2158 /* BSearchListCell.xib */; };
-		B7228CCD2F92086C003D2158 /* BusHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7228CC62F92086C003D2158 /* BusHistoryCell.xib */; };
-		B7228CCE2F92086C003D2158 /* AddTravellerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7228CC22F92086C003D2158 /* AddTravellerCell.xib */; };
-		B7228CCF2F92086C003D2158 /* AddTravellerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7228CC12F92086C003D2158 /* AddTravellerCell.swift */; };
-		B7228CD02F92086C003D2158 /* BusHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7228CC52F92086C003D2158 /* BusHistoryCell.swift */; };
-		B7228CD22F92086C003D2158 /* BSearchListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7228CC32F92086C003D2158 /* BSearchListCell.swift */; };
-		B7228CD32F92086C003D2158 /* SeatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7228CC72F92086C003D2158 /* SeatCollectionViewCell.swift */; };
-		B7228CDD2F920879003D2158 /* BusFilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7228CD72F920879003D2158 /* BusFilterVC.swift */; };
-		B7228CDE2F920879003D2158 /* BusesSearchListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7228CD62F920879003D2158 /* BusesSearchListVC.swift */; };
-		B7228CDF2F920879003D2158 /* BusHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7228CD92F920879003D2158 /* BusHomeVC.swift */; };
-		B7228CE02F920879003D2158 /* BusHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7228CD82F920879003D2158 /* BusHistoryVC.swift */; };
-		B7228CE12F920879003D2158 /* BusPassengerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7228CDA2F920879003D2158 /* BusPassengerDetails.swift */; };
-		B7228CE32F920879003D2158 /* BSearchCitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7228CD42F920879003D2158 /* BSearchCitiesVC.swift */; };
-		B7228CE42F920879003D2158 /* BusReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7228CDB2F920879003D2158 /* BusReviewVC.swift */; };
-		B7228CE62F920885003D2158 /* Bus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7228CE52F920885003D2158 /* Bus.storyboard */; };
 		B727834A2D5C99E2003CECA3 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B72783432D5C99E2003CECA3 /* Poppins-Medium.ttf */; };
 		B727834B2D5C99E2003CECA3 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B72783492D5C99E2003CECA3 /* Poppins-ThinItalic.ttf */; };
 		B727834C2D5C99E2003CECA3 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B727833B2D5C99E2003CECA3 /* Poppins-BoldItalic.ttf */; };
@@ -555,10 +536,6 @@
 		B7AB029A2E44B265001D2336 /* DatePickerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AB02992E44B265001D2336 /* DatePickerHelper.swift */; };
 		B7AB029C2E44BCB1001D2336 /* TimePickerPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7AB029B2E44BCB1001D2336 /* TimePickerPopView.xib */; };
 		B7AB029E2E44BD5D001D2336 /* TimePickerPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AB029D2E44BD5D001D2336 /* TimePickerPopView.swift */; };
-		B7B561D02FA0817300EB0C6E /* BusSeatsSelectedTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B561CF2FA0817300EB0C6E /* BusSeatsSelectedTVCell.xib */; };
-		B7B561D12FA0817300EB0C6E /* BusSeatsSelectedTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B561CE2FA0817300EB0C6E /* BusSeatsSelectedTVCell.swift */; };
-		B7B561D42FA2022D00EB0C6E /* CancPolicyTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B561D32FA2022D00EB0C6E /* CancPolicyTVCell.xib */; };
-		B7B561D52FA2022D00EB0C6E /* CancPolicyTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B561D22FA2022D00EB0C6E /* CancPolicyTVCell.swift */; };
 		B7BDDECC2D7AE6A500FAAA3F /* FStopsDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7BDDECB2D7AE6A500FAAA3F /* FStopsDetailsCell.xib */; };
 		B7BDDECD2D7AE6A500FAAA3F /* FStopsDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BDDECA2D7AE6A500FAAA3F /* FStopsDetailsCell.swift */; };
 		B7BE44F22E41B4B3006DC75A /* all_api_city_master_new.csv in Resources */ = {isa = PBXBuildFile; fileRef = B7BE44F12E41B4B3006DC75A /* all_api_city_master_new.csv */; };
@@ -571,10 +548,6 @@
 		B7EEDF6F2D9195AF004F7CF2 /* HotelLocationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEDF6C2D9195AF004F7CF2 /* HotelLocationsCell.swift */; };
 		B7EFB21C2E41F3EB006CFA4C /* MyBookingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFB21A2E41F3EB006CFA4C /* MyBookingsVC.swift */; };
 		B7EFB21F2E41F465006CFA4C /* HotelHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFB21E2E41F465006CFA4C /* HotelHistoryVC.swift */; };
-		B7F8603F2F9F278A001E886A /* DBusSeatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8603E2F9F278A001E886A /* DBusSeatModel.swift */; };
-		B7F860412F9F2798001E886A /* BusSeatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F860402F9F2798001E886A /* BusSeatsVC.swift */; };
-		B7F860482F9F5EBF001E886A /* BusSeatsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F860462F9F5EBF001E886A /* BusSeatsCVCell.swift */; };
-		B7F860492F9F5EBF001E886A /* BusSeatsCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F860472F9F5EBF001E886A /* BusSeatsCVCell.xib */; };
 		B7FE4C8C2D9566140056242A /* FacilityCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7FE4C8B2D9566140056242A /* FacilityCVCell.xib */; };
 		B7FE4C8D2D9566140056242A /* FacilityCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE4C8A2D9566140056242A /* FacilityCVCell.swift */; };
 /* End PBXBuildFile section */
@@ -1103,25 +1076,6 @@
 		B71834972D93D0FE00B5F9CC /* SelectRoomListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoomListVC.swift; sourceTree = "<group>"; };
 		B72168A92EE018E700E86F16 /* FBookingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBookingCell.swift; sourceTree = "<group>"; };
 		B72168AA2EE018E700E86F16 /* FBookingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FBookingCell.xib; sourceTree = "<group>"; };
-		B7228CB62F92085E003D2158 /* DBTravelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBTravelModel.swift; sourceTree = "<group>"; };
-		B7228CB82F92085E003D2158 /* DBusesSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBusesSearchModel.swift; sourceTree = "<group>"; };
-		B7228CB92F92085E003D2158 /* DBusFilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBusFilterModel.swift; sourceTree = "<group>"; };
-		B7228CBA2F92085E003D2158 /* DBusResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBusResultModel.swift; sourceTree = "<group>"; };
-		B7228CC12F92086C003D2158 /* AddTravellerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTravellerCell.swift; sourceTree = "<group>"; };
-		B7228CC22F92086C003D2158 /* AddTravellerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTravellerCell.xib; sourceTree = "<group>"; };
-		B7228CC32F92086C003D2158 /* BSearchListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSearchListCell.swift; sourceTree = "<group>"; };
-		B7228CC42F92086C003D2158 /* BSearchListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BSearchListCell.xib; sourceTree = "<group>"; };
-		B7228CC52F92086C003D2158 /* BusHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusHistoryCell.swift; sourceTree = "<group>"; };
-		B7228CC62F92086C003D2158 /* BusHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusHistoryCell.xib; sourceTree = "<group>"; };
-		B7228CC72F92086C003D2158 /* SeatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatCollectionViewCell.swift; sourceTree = "<group>"; };
-		B7228CD42F920879003D2158 /* BSearchCitiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSearchCitiesVC.swift; sourceTree = "<group>"; };
-		B7228CD62F920879003D2158 /* BusesSearchListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusesSearchListVC.swift; sourceTree = "<group>"; };
-		B7228CD72F920879003D2158 /* BusFilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusFilterVC.swift; sourceTree = "<group>"; };
-		B7228CD82F920879003D2158 /* BusHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusHistoryVC.swift; sourceTree = "<group>"; };
-		B7228CD92F920879003D2158 /* BusHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusHomeVC.swift; sourceTree = "<group>"; };
-		B7228CDA2F920879003D2158 /* BusPassengerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusPassengerDetails.swift; sourceTree = "<group>"; };
-		B7228CDB2F920879003D2158 /* BusReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusReviewVC.swift; sourceTree = "<group>"; };
-		B7228CE52F920885003D2158 /* Bus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bus.storyboard; sourceTree = "<group>"; };
 		B72783382D5C99E2003CECA3 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
 		B72783392D5C99E2003CECA3 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
 		B727833A2D5C99E2003CECA3 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
@@ -1215,10 +1169,6 @@
 		B7AB02992E44B265001D2336 /* DatePickerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerHelper.swift; sourceTree = "<group>"; };
 		B7AB029B2E44BCB1001D2336 /* TimePickerPopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimePickerPopView.xib; sourceTree = "<group>"; };
 		B7AB029D2E44BD5D001D2336 /* TimePickerPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerPopView.swift; sourceTree = "<group>"; };
-		B7B561CE2FA0817300EB0C6E /* BusSeatsSelectedTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusSeatsSelectedTVCell.swift; sourceTree = "<group>"; };
-		B7B561CF2FA0817300EB0C6E /* BusSeatsSelectedTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusSeatsSelectedTVCell.xib; sourceTree = "<group>"; };
-		B7B561D22FA2022D00EB0C6E /* CancPolicyTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancPolicyTVCell.swift; sourceTree = "<group>"; };
-		B7B561D32FA2022D00EB0C6E /* CancPolicyTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CancPolicyTVCell.xib; sourceTree = "<group>"; };
 		B7BDDECA2D7AE6A500FAAA3F /* FStopsDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FStopsDetailsCell.swift; sourceTree = "<group>"; };
 		B7BDDECB2D7AE6A500FAAA3F /* FStopsDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FStopsDetailsCell.xib; sourceTree = "<group>"; };
 		B7BE44F12E41B4B3006DC75A /* all_api_city_master_new.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = all_api_city_master_new.csv; sourceTree = "<group>"; };
@@ -1231,10 +1181,6 @@
 		B7EEDF6D2D9195AF004F7CF2 /* HotelLocationsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelLocationsCell.xib; sourceTree = "<group>"; };
 		B7EFB21A2E41F3EB006CFA4C /* MyBookingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookingsVC.swift; sourceTree = "<group>"; };
 		B7EFB21E2E41F465006CFA4C /* HotelHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelHistoryVC.swift; sourceTree = "<group>"; };
-		B7F8603E2F9F278A001E886A /* DBusSeatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBusSeatModel.swift; sourceTree = "<group>"; };
-		B7F860402F9F2798001E886A /* BusSeatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusSeatsVC.swift; sourceTree = "<group>"; };
-		B7F860462F9F5EBF001E886A /* BusSeatsCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusSeatsCVCell.swift; sourceTree = "<group>"; };
-		B7F860472F9F5EBF001E886A /* BusSeatsCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusSeatsCVCell.xib; sourceTree = "<group>"; };
 		B7FE4C8A2D9566140056242A /* FacilityCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityCVCell.swift; sourceTree = "<group>"; };
 		B7FE4C8B2D9566140056242A /* FacilityCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FacilityCVCell.xib; sourceTree = "<group>"; };
 		BBBB675B0C373A2F8EFE109B /* Pods-DreamoraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamoraTests.release.xcconfig"; path = "Target Support Files/Pods-DreamoraTests/Pods-DreamoraTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1343,7 +1289,6 @@
 				84ABBB2D2A03F0EA001274BB /* Main.storyboard */,
 				B7592E222E30CAD200D3EF0C /* Flight.storyboard */,
 				84ABBB2B2A03F08D001274BB /* Hotel.storyboard */,
-				B7228CE52F920885003D2158 /* Bus.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -1629,7 +1574,6 @@
 				AA48F995269EAA900065A8C5 /* CommonModel */,
 				AA48F997269EAA900065A8C5 /* HotelModel */,
 				B7592E172E30C29800D3EF0C /* FlightModel */,
-				B7228CBB2F92085E003D2158 /* BusModel */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1641,7 +1585,6 @@
 				AA48F98D269EA8EF0065A8C5 /* Home */,
 				B7592DF42E30C27C00D3EF0C /* Flight */,
 				AA48F98F269EA8F00065A8C5 /* Hotel */,
-				B7228CDC2F920879003D2158 /* Bus */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1654,7 +1597,6 @@
 				AA48F98A269EA8D90065A8C5 /* HomeCells */,
 				AA48F98C269EA8D90065A8C5 /* FlightCells */,
 				AA48F989269EA8D90065A8C5 /* HotelCells */,
-				B7228CCA2F92086C003D2158 /* BusCells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -2186,53 +2128,6 @@
 			path = Currency_Flags;
 			sourceTree = "<group>";
 		};
-		B7228CBB2F92085E003D2158 /* BusModel */ = {
-			isa = PBXGroup;
-			children = (
-				B7228CB62F92085E003D2158 /* DBTravelModel.swift */,
-				B7228CB82F92085E003D2158 /* DBusesSearchModel.swift */,
-				B7228CB92F92085E003D2158 /* DBusFilterModel.swift */,
-				B7228CBA2F92085E003D2158 /* DBusResultModel.swift */,
-				B7F8603E2F9F278A001E886A /* DBusSeatModel.swift */,
-			);
-			path = BusModel;
-			sourceTree = "<group>";
-		};
-		B7228CCA2F92086C003D2158 /* BusCells */ = {
-			isa = PBXGroup;
-			children = (
-				B7F860462F9F5EBF001E886A /* BusSeatsCVCell.swift */,
-				B7F860472F9F5EBF001E886A /* BusSeatsCVCell.xib */,
-				B7B561D22FA2022D00EB0C6E /* CancPolicyTVCell.swift */,
-				B7B561D32FA2022D00EB0C6E /* CancPolicyTVCell.xib */,
-				B7B561CE2FA0817300EB0C6E /* BusSeatsSelectedTVCell.swift */,
-				B7B561CF2FA0817300EB0C6E /* BusSeatsSelectedTVCell.xib */,
-				B7228CC12F92086C003D2158 /* AddTravellerCell.swift */,
-				B7228CC22F92086C003D2158 /* AddTravellerCell.xib */,
-				B7228CC32F92086C003D2158 /* BSearchListCell.swift */,
-				B7228CC42F92086C003D2158 /* BSearchListCell.xib */,
-				B7228CC52F92086C003D2158 /* BusHistoryCell.swift */,
-				B7228CC62F92086C003D2158 /* BusHistoryCell.xib */,
-				B7228CC72F92086C003D2158 /* SeatCollectionViewCell.swift */,
-			);
-			path = BusCells;
-			sourceTree = "<group>";
-		};
-		B7228CDC2F920879003D2158 /* Bus */ = {
-			isa = PBXGroup;
-			children = (
-				B7228CD92F920879003D2158 /* BusHomeVC.swift */,
-				B7228CD42F920879003D2158 /* BSearchCitiesVC.swift */,
-				B7228CD62F920879003D2158 /* BusesSearchListVC.swift */,
-				B7228CD72F920879003D2158 /* BusFilterVC.swift */,
-				B7F860402F9F2798001E886A /* BusSeatsVC.swift */,
-				B7228CDA2F920879003D2158 /* BusPassengerDetails.swift */,
-				B7228CDB2F920879003D2158 /* BusReviewVC.swift */,
-				B7228CD82F920879003D2158 /* BusHistoryVC.swift */,
-			);
-			path = Bus;
-			sourceTree = "<group>";
-		};
 		B7592DE62E30C27C00D3EF0C /* FlightSeatMap */ = {
 			isa = PBXGroup;
 			children = (
@@ -2431,7 +2326,6 @@
 				AA48F86E269EA6630065A8C5 /* lc.png in Resources */,
 				AA48F87F269EA6630065A8C5 /* tw.png in Resources */,
 				AA48F8C5269EA6630065A8C5 /* qa.png in Resources */,
-				B7F860492F9F5EBF001E886A /* BusSeatsCVCell.xib in Resources */,
 				AA837F3A269F234E004264CF /* HomeAdsCell.xib in Resources */,
 				AA48F892269EA6630065A8C5 /* pl.png in Resources */,
 				AA48F932269EA6630065A8C5 /* zw.png in Resources */,
@@ -2528,7 +2422,6 @@
 				AA48F897269EA6630065A8C5 /* gd.png in Resources */,
 				AA48F855269EA6630065A8C5 /* co.png in Resources */,
 				AA48F89A269EA6630065A8C5 /* kp.png in Resources */,
-				B7B561D02FA0817300EB0C6E /* BusSeatsSelectedTVCell.xib in Resources */,
 				AA48F8CA269EA6630065A8C5 /* es.png in Resources */,
 				AA837FC4269F3FF0004264CF /* HPassengerCell.xib in Resources */,
 				AA48F93E269EA6630065A8C5 /* vu.png in Resources */,
@@ -2584,7 +2477,6 @@
 				AA48F8FF269EA6630065A8C5 /* cg.png in Resources */,
 				AA48F860269EA6630065A8C5 /* lu.png in Resources */,
 				AA48F8AE269EA6630065A8C5 /* ru.png in Resources */,
-				B7228CE62F920885003D2158 /* Bus.storyboard in Resources */,
 				AA48F877269EA6630065A8C5 /* ch.png in Resources */,
 				AA48F8C4269EA6630065A8C5 /* ss.png in Resources */,
 				B7AB029C2E44BCB1001D2336 /* TimePickerPopView.xib in Resources */,
@@ -2658,9 +2550,6 @@
 				AA48F939269EA6630065A8C5 /* cc.png in Resources */,
 				AAF0AAA226B2B0880013E60E /* EUR.png in Resources */,
 				AA0557B826A1AB01007594A3 /* CalendarPopView.xib in Resources */,
-				B7228CCC2F92086C003D2158 /* BSearchListCell.xib in Resources */,
-				B7228CCD2F92086C003D2158 /* BusHistoryCell.xib in Resources */,
-				B7228CCE2F92086C003D2158 /* AddTravellerCell.xib in Resources */,
 				AA48F84B269EA6630065A8C5 /* la.png in Resources */,
 				AA48F938269EA6630065A8C5 /* bg.png in Resources */,
 				AA48F8D1269EA6630065A8C5 /* hu.png in Resources */,
@@ -2772,7 +2661,6 @@
 				AA48F89B269EA6630065A8C5 /* kg.png in Resources */,
 				AA48F90D269EA6630065A8C5 /* tz.png in Resources */,
 				AA48F891269EA6630065A8C5 /* tt.png in Resources */,
-				B7B561D42FA2022D00EB0C6E /* CancPolicyTVCell.xib in Resources */,
 				AA48F8BD269EA6630065A8C5 /* ga.png in Resources */,
 				AA48F8A5269EA6630065A8C5 /* gf.png in Resources */,
 				AA48F867269EA6630065A8C5 /* as.png in Resources */,
@@ -2938,14 +2826,8 @@
 				8460D56B29215D39008C6705 /* DWishlistModel.swift in Sources */,
 				AA837F50269F32E8004264CF /* CMSContentVC.swift in Sources */,
 				847E565C291380C200D0BDCC /* EmptyVC.swift in Sources */,
-				B7B561D52FA2022D00EB0C6E /* CancPolicyTVCell.swift in Sources */,
 				AA48F983269EA7050065A8C5 /* TMXConstants.swift in Sources */,
 				B73450AD2D6841BE00A9AB5D /* SuccessVC.swift in Sources */,
-				B7F860412F9F2798001E886A /* BusSeatsVC.swift in Sources */,
-				B7228CCF2F92086C003D2158 /* AddTravellerCell.swift in Sources */,
-				B7228CD02F92086C003D2158 /* BusHistoryCell.swift in Sources */,
-				B7228CD22F92086C003D2158 /* BSearchListCell.swift in Sources */,
-				B7228CD32F92086C003D2158 /* SeatCollectionViewCell.swift in Sources */,
 				AA48F95E269EA6630065A8C5 /* JTCalendarDelegateManager.m in Sources */,
 				AA48F94A269EA6630065A8C5 /* UITextView+Placeholder.m in Sources */,
 				AA48F951269EA6630065A8C5 /* NBMetadataCore.m in Sources */,
@@ -2971,7 +2853,6 @@
 				AA48F95B269EA6630065A8C5 /* JTDateHelper.m in Sources */,
 				AA48F970269EA6630065A8C5 /* UIImageView+HighlightedWebCache.m in Sources */,
 				AA48F975269EA6630065A8C5 /* SDWebImagePrefetcher.m in Sources */,
-				B7F8603F2F9F278A001E886A /* DBusSeatModel.swift in Sources */,
 				AA837F93269F382F004264CF /* SliderMenuCell.swift in Sources */,
 				AA837F97269F3866004264CF /* CountryCodeCell.swift in Sources */,
 				AA4EA6F426B174BC00115DBD /* DBookingHistoryModel.swift in Sources */,
@@ -3022,7 +2903,6 @@
 				AA0557C026A1C532007594A3 /* HotelSearchListVC.swift in Sources */,
 				AA48F95D269EA6630065A8C5 /* JTCalendarScrollManager.m in Sources */,
 				845F9ABA28BDD550003ABA7D /* HistoryVoucherVC.swift in Sources */,
-				B7B561D12FA0817300EB0C6E /* BusSeatsSelectedTVCell.swift in Sources */,
 				B7EFB21F2E41F465006CFA4C /* HotelHistoryVC.swift in Sources */,
 				B7592E202E30C6FC00D3EF0C /* PromoCodeTVCell.swift in Sources */,
 				AA0557CA26A1C9F8007594A3 /* HotelReviewVC.swift in Sources */,
@@ -3039,13 +2919,6 @@
 				AA44939A26B0205300C3F5BE /* CurrencyView.swift in Sources */,
 				AA48F97D269EA6630065A8C5 /* UIView+WebCache.m in Sources */,
 				AA837F3D269F2B9D004264CF /* HomeModulesCVCell.swift in Sources */,
-				B7228CDD2F920879003D2158 /* BusFilterVC.swift in Sources */,
-				B7228CDE2F920879003D2158 /* BusesSearchListVC.swift in Sources */,
-				B7228CDF2F920879003D2158 /* BusHomeVC.swift in Sources */,
-				B7228CE02F920879003D2158 /* BusHistoryVC.swift in Sources */,
-				B7228CE12F920879003D2158 /* BusPassengerDetails.swift in Sources */,
-				B7228CE32F920879003D2158 /* BSearchCitiesVC.swift in Sources */,
-				B7228CE42F920879003D2158 /* BusReviewVC.swift in Sources */,
 				AA48F94D269EA6630065A8C5 /* NBNumberFormat.m in Sources */,
 				B7592DFA2E30C27C00D3EF0C /* FlightHomeVC.swift in Sources */,
 				B7592DFB2E30C27C00D3EF0C /* FSearchCitiesVC.swift in Sources */,
@@ -3061,10 +2934,6 @@
 				B7592E032E30C27C00D3EF0C /* PassengerFormVC.swift in Sources */,
 				B7592E042E30C27C00D3EF0C /* FlightReviewVC.swift in Sources */,
 				B7592E052E30C27C00D3EF0C /* FlightPaymentVC.swift in Sources */,
-				B7228CBD2F92085E003D2158 /* DBusFilterModel.swift in Sources */,
-				B7228CBE2F92085E003D2158 /* DBTravelModel.swift in Sources */,
-				B7228CBF2F92085E003D2158 /* DBusesSearchModel.swift in Sources */,
-				B7228CC02F92085E003D2158 /* DBusResultModel.swift in Sources */,
 				B7592E062E30C27C00D3EF0C /* FlightSearchListVC.swift in Sources */,
 				B7592E072E30C27C00D3EF0C /* FlightTripCVCell.swift in Sources */,
 				B7AB029E2E44BD5D001D2336 /* TimePickerPopView.swift in Sources */,
@@ -3082,7 +2951,6 @@
 				847E56612913C93400D0BDCC /* CommonLabelCV.swift in Sources */,
 				AA48F94C269EA6630065A8C5 /* NBPhoneMetaData.m in Sources */,
 				AA48F965269EA6630065A8C5 /* JTCalendarPageView.m in Sources */,
-				B7F860482F9F5EBF001E886A /* BusSeatsCVCell.swift in Sources */,
 				AA837F48269F3254004264CF /* LoginVC.swift in Sources */,
 				AA48F96D269EA6630065A8C5 /* MKAnnotationView+WebCache.m in Sources */,
 				AA48F978269EA6630065A8C5 /* NSData+ImageContentType.m in Sources */,

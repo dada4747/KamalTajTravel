@@ -1327,7 +1327,7 @@
                                     <rect key="frame" x="0.0" y="10" width="320" height="35"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adults (12+)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYf-mk-yiV">
-                                            <rect key="frame" x="10" y="5" width="83.5" height="20.5"/>
+                                            <rect key="frame" x="10" y="6.5" width="80.5" height="17.5"/>
                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="15"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -1408,7 +1408,7 @@
                                     <rect key="frame" x="0.0" y="55" width="320" height="35"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Children (2-12 Years)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUi-ti-ELP">
-                                            <rect key="frame" x="10" y="5" width="145" height="20.5"/>
+                                            <rect key="frame" x="10" y="6.5" width="139.5" height="17.5"/>
                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="15"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -1487,7 +1487,7 @@
                                     <rect key="frame" x="0.0" y="100" width="320" height="35"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Infant (below 2 Years)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QS0-7J-G5E">
-                                            <rect key="frame" x="10" y="5" width="152.5" height="20.5"/>
+                                            <rect key="frame" x="10" y="6.5" width="143.5" height="17.5"/>
                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="15"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -7313,7 +7313,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R24-wN-Xgn" customClass="GradientButton" customModule="KamalTaj" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
-                                        <color key="backgroundColor" red="1" green="0.54117647059999996" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="clr_primary"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="9sd-xB-KMg"/>
                                         </constraints>
@@ -8805,13 +8805,13 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5D-bQ-cuN" customClass="RoundedView" customModule="KamalTaj" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="86" width="375" height="504"/>
+                            <rect key="frame" x="0.0" y="117" width="375" height="473"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J15-wt-KAS">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Extra Service Details" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9X-bE-2VJ">
-                                            <rect key="frame" x="30" y="10" width="161" height="30"/>
+                                            <rect key="frame" x="30" y="10" width="157" height="30"/>
                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -8840,22 +8840,22 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsN-9i-viy" customClass="CardView" customModule="KamalTaj" customModuleProvider="target">
-                                    <rect key="frame" x="15" y="60" width="345" height="419"/>
+                                    <rect key="frame" x="15" y="60" width="345" height="388"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dN9-KA-mLo">
-                                            <rect key="frame" x="15" y="20" width="315" height="374"/>
+                                            <rect key="frame" x="15" y="20" width="315" height="343"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17A-Cx-l5D">
-                                                    <rect key="frame" x="0.0" y="0.0" width="315" height="22"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="315" height="19"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Fare" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duD-mz-qK1">
-                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="₹47,554" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4h-HL-nWR">
-                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -8863,16 +8863,16 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0O5-h1-bwc">
-                                                    <rect key="frame" x="0.0" y="37" width="315" height="22"/>
+                                                    <rect key="frame" x="0.0" y="34" width="315" height="19"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Tax" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sR-z4-U5d">
-                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="₹4,576" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6f2-no-nz0">
-                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -8880,16 +8880,16 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s3I-FK-Mgc">
-                                                    <rect key="frame" x="0.0" y="74" width="315" height="22"/>
+                                                    <rect key="frame" x="0.0" y="68" width="315" height="19"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="GST/VAT" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlO-qd-xSd">
-                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="₹4,576" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFi-Cd-Ley">
-                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -8897,16 +8897,16 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xe3-9m-eEZ">
-                                                    <rect key="frame" x="0.0" y="111" width="315" height="22"/>
+                                                    <rect key="frame" x="0.0" y="102" width="315" height="19"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Discount" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcf-4j-kql">
-                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="₹4,576" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Be9-8b-Zlv">
-                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -8914,16 +8914,16 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XU1-30-YGZ">
-                                                    <rect key="frame" x="0.0" y="148" width="315" height="22"/>
+                                                    <rect key="frame" x="0.0" y="136" width="315" height="19"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Reward Discount" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVO-ru-eDV">
-                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="₹4,576" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJt-n8-ume">
-                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -8931,16 +8931,16 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OcK-zz-dhb">
-                                                    <rect key="frame" x="0.0" y="185" width="315" height="22"/>
+                                                    <rect key="frame" x="0.0" y="170" width="315" height="19"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Convenience Fee" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVB-qq-KUU">
-                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="₹2,500" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjX-Mf-Na0">
-                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -8948,16 +8948,16 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ZJ-qM-QCA">
-                                                    <rect key="frame" x="0.0" y="222" width="315" height="22"/>
+                                                    <rect key="frame" x="0.0" y="204" width="315" height="19"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Extra Seats" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaG-iP-ENt">
-                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="₹ 0.00" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O60-gT-9Cw">
-                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -8965,16 +8965,16 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Flf-2B-ryM">
-                                                    <rect key="frame" x="0.0" y="259" width="315" height="22"/>
+                                                    <rect key="frame" x="0.0" y="238" width="315" height="19"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Extra Meals" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYt-9P-QvG">
-                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="₹ 0.00" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccM-RD-ZRb">
-                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -8982,16 +8982,16 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ym4-Fi-SAK">
-                                                    <rect key="frame" x="0.0" y="296" width="315" height="22"/>
+                                                    <rect key="frame" x="0.0" y="272" width="315" height="19"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Extra Baggage" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVr-8B-7Ic">
-                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="₹ 0.00" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afy-CJ-TnB">
-                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="22"/>
+                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-Regular" family="Noto Sans" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -8999,7 +8999,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YvV-Cv-2UD">
-                                                    <rect key="frame" x="0.0" y="333" width="315" height="1"/>
+                                                    <rect key="frame" x="0.0" y="306" width="315" height="1"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="img-rf-77a">
                                                             <rect key="frame" x="0.0" y="0.0" width="315" height="1"/>
@@ -9014,16 +9014,16 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAn-wn-UAo">
-                                                    <rect key="frame" x="0.0" y="349" width="315" height="25"/>
+                                                    <rect key="frame" x="0.0" y="322" width="315" height="21"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Total Amount" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7r-2d-JVP">
-                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="25"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="21"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-SemiBold" family="Noto Sans" pointSize="18"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="₹17,344" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJU-dR-R8b">
-                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="25"/>
+                                                            <rect key="frame" x="157.5" y="0.0" width="157.5" height="21"/>
                                                             <fontDescription key="fontDescription" name="NotoSans-SemiBold" family="Noto Sans" pointSize="18"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>

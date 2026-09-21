@@ -16,7 +16,7 @@ class MyBookingsVC: UIViewController {
     
     var currentViewController: UIViewController?
     var selectedIndex: Int = 0
-    var modulesArray: [String] = ["Flight", "Hotels", "Buses"/*,"Transfers", "Activities", "Holidays"*/]
+    var modulesArray: [String] = ["Flight", "Hotels"/*, "Buses","Transfers", "Activities", "Holidays"*/]
     
     
 
@@ -89,17 +89,17 @@ class MyBookingsVC: UIViewController {
         return viewController
     }()
     
-    private lazy var busHistoryVC: BusHistoryVC = {
-
-        // Instantiate View Controller
-        var viewController = BUS_STORYBOARD.instantiateViewController(withIdentifier: "BusHistoryVC") as! BusHistoryVC
-
-        // Add View Controller as Child View Controller
-        self.addViewCotroller(asChildViewController: viewController)
-
-        return viewController
-    }()
-    
+//    private lazy var busHistoryVC: BusHistoryVC = {
+//
+//        // Instantiate View Controller
+//        var viewController = BUS_STORYBOARD.instantiateViewController(withIdentifier: "BusHistoryVC") as! BusHistoryVC
+//
+//        // Add View Controller as Child View Controller
+//        self.addViewCotroller(asChildViewController: viewController)
+//
+//        return viewController
+//    }()
+//    
     
     
 //    private lazy var transferHistoryVC: TransferHistoryVC = {
@@ -145,9 +145,9 @@ extension MyBookingsVC {
     private func addHotelView() {
         addViewCotroller(asChildViewController: hotelHistoryVC)
     }
-    private func addBusView() {
-        addViewCotroller(asChildViewController: busHistoryVC)
-    }
+//    private func addBusView() {
+//        addViewCotroller(asChildViewController: busHistoryVC)
+//    }
     
     
 //    private func addTransferView() {
@@ -214,11 +214,25 @@ extension MyBookingsVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
         return modulesArray.count
     }
     
+//    func collectionView(_ collectionView: UICollectionView,
+//                        layout collectionViewLayout: UICollectionViewLayout,
+//                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        
+//        let itemsPerRow: CGFloat = 3
+//        let leftRightInset: CGFloat = 40 + 40
+//        let spacing: CGFloat = 10 * (itemsPerRow - 1)
+//        
+//        let availableWidth = collectionView.frame.width - leftRightInset - spacing
+//        let cellWidth = floor(availableWidth / itemsPerRow)
+//        
+//        return CGSize(width: cellWidth, height: 40)
+//    }
+//
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let itemsPerRow: CGFloat = 3
+        let itemsPerRow: CGFloat = 2
         let leftRightInset: CGFloat = 20 + 20
         let spacing: CGFloat = 10 * (itemsPerRow - 1)
         
@@ -227,7 +241,6 @@ extension MyBookingsVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
         
         return CGSize(width: cellWidth, height: 40)
     }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CommonLabelCV", for: indexPath as IndexPath) as! CommonLabelCV
         
@@ -255,8 +268,8 @@ extension MyBookingsVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
             addFlightView()
         case 1:
             addHotelView()
-        case 2:
-            addBusView()
+//        case 2:
+//            addBusView()
 //        case 3:
 //            addTransferView()
 //        case 4:

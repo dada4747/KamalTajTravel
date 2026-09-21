@@ -530,7 +530,7 @@ class DCommonTrendingPackageItem {
         self.packageCity = ""
         self.package_inclusions = ""
         self.package_exclusions = ""
-        self.currency_code = "INR"
+        self.currency_code = "USD"
         self.from_date = ""
         self.to_date = ""
         self.package_country = ""

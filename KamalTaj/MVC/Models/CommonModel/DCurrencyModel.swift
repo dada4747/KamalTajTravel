@@ -29,11 +29,11 @@ struct DCurrencyModel {
     
     static func setDefaultCurrency() {
         
-        let currency: [String: Any] = ["id": "22",
-                                       "country": "INR",
+        let currency: [String: Any] = ["id": "61",
+                                       "country": "USD",
                                        "country_name": "",
                                        "currency_name": "",
-                                       "currency_symbol": "\u{20B9}",
+                                       "currency_symbol": "$",
                                        "value": "1"]
         
         // covert object to data...
@@ -89,7 +89,7 @@ struct DCurrencyItem {
         
         // default...
         currency_id = ""
-        currency_country = "INR"
+        currency_country = "USD"
         currency_countryName = ""
         currency_name = ""
         currency_symbol = ""

@@ -64,7 +64,7 @@ struct AppColors {
 let TMXUser_Profile = "user_profile"
 let TMX_LanguageStore = "language"
 let TMX_Currency = "currency"
-let BASE_CURRENCY = "INR"
+let BASE_CURRENCY = "USD"
 let CTG_CurrencyConversion = "currency_conversion"
 
 // MARK:- Notifications...

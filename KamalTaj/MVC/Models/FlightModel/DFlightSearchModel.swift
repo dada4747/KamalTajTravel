@@ -188,7 +188,7 @@ struct DFlightSearchMultiItem {
     var token_key: String?
     var auth_key: String?
     var booking_source: String?
-    var currency_code: String = "INR"
+    var currency_code: String = "USD"
     var is_refund = false
     var ticket_price: Float = 0.0
     var tax_price: Float = 0.0
@@ -216,7 +216,7 @@ struct DFlightSearchMultiItem {
 
         self.airline_id = ""
         self.token = ""
-        self.currency_code = "INR"
+        self.currency_code = "USD"
         self.flight_info = details
         
         // airline id...

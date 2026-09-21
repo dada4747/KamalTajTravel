@@ -177,19 +177,19 @@ class HomeVC: UIViewController, TopDestinationsProtocol {
     
     
     //    MARK: Transfers
-    @IBOutlet weak var  view_transfer: UIView!
+//    @IBOutlet weak var  view_transfer: UIView!
     
     @IBOutlet weak var view_infantTraveller: UIView!
     
 //    MARK: Bus
-    @IBOutlet weak var tf_bSource: UITextField!
-    @IBOutlet weak var tf_bDestination: UITextField!
-    @IBOutlet weak var lbl_bSelectedDate: UILabel!
-
-    //MARK: - Variables
-    var bSourceCity : [String: Any]?
-    var bDestinationCity : [String: Any]?
-    var bDepartDate = Date()
+//    @IBOutlet weak var tf_bSource: UITextField!
+//    @IBOutlet weak var tf_bDestination: UITextField!
+//    @IBOutlet weak var lbl_bSelectedDate: UILabel!
+//
+//    //MARK: - Variables
+//    var bSourceCity : [String: Any]?
+//    var bDestinationCity : [String: Any]?
+//    var bDepartDate = Date()
 
 
     override func viewDidLoad() {
@@ -209,11 +209,11 @@ class HomeVC: UIViewController, TopDestinationsProtocol {
 //        mulityCititesListArray = DCityModel.createModel()
         
         clearInformationAfterBooking()
-        clearBusInfoAfterBooking()
+//        clearBusInfoAfterBooking()
         // MARK: - Module Setup
         setupFlights()
         setupHotel()
-        setupBus()
+//        setupBus()
         
         updateTravellerInfo()
         
@@ -259,15 +259,15 @@ class HomeVC: UIViewController, TopDestinationsProtocol {
         DHTravelModel.hotelCity_dict = hotelInfo
         print(hotelInfo)
     }
-    private func setupBus(){
-        DBTravelModel.departDate = Calendar.current.date(byAdding: .day, value: 1, to: Date())!
-        updateDepartDateUI()
-    }
+//    private func setupBus(){
+//        DBTravelModel.departDate = Calendar.current.date(byAdding: .day, value: 1, to: Date())!
+//        updateDepartDateUI()
+//    }
     //MARK: - UI Setup
     func setupModuleviews(){
         view_Hotel.isHidden = true
         view_returnDate.isHidden = false
-        view_transfer.isHidden = true
+//        view_transfer.isHidden = true
         
         view_returnDate.alpha = 0.5
         view_returnDate.isUserInteractionEnabled = false
@@ -502,110 +502,110 @@ class HomeVC: UIViewController, TopDestinationsProtocol {
     }
 }
 //MARK: Bus
-extension HomeVC {
-    func updateDepartDateUI() {
-        lbl_bSelectedDate.text = DateFormatter.getDateString(formate: "dd MMM, yyyy", date: departDate)
-
-    }
-    func updateBusDepartDestinationCity(){
-        tf_bSource.text = bSourceCity?["label"] as? String ?? ""
-        tf_bDestination.text = bDestinationCity?["label"] as? String ?? ""
-
-    }
-    func moveToBusCitiesSelection(){
-        let searchObj = BUS_STORYBOARD.instantiateViewController(withIdentifier: "BSearchCitiesVC") as! BSearchCitiesVC
-        searchObj.delegate = self
-        self.present(searchObj, animated: true, completion: nil)
-    }
-    @IBAction func busSourceButtonAction(_ sender: Any) {
-        // selelect source city
-        cityIndex = 1
-        moveToBusCitiesSelection()
-    }
-    @IBAction func busDestinationButtonAction(_ sender: Any) {
-        //select destination city
-        cityIndex = 2
-        moveToBusCitiesSelection()
-    }
-    
-    @IBAction func switchBusLocationAction(_ sender: Any) {
-        //switch loaction button action
-        if tf_bSource.text?.isEmpty == true {
-            self.view.makeToast(message: "Please Select Departure")
-            
-        } else if tf_bDestination.text?.isEmpty == true  {
-            
-            self.view.makeToast(message: "Please Select Destination")
-            
-        } else {
-            let tempCity = tf_bSource.text
-            tf_bSource.text = tf_bDestination.text
-            tf_bDestination.text = tempCity
-            let tempCities = bSourceCity
-            bSourceCity = bDestinationCity
-            bDestinationCity = tempCities
-        }
-    }
-    @IBAction func selectDateAction(_ sender: Any) {
-        module = .Bus
-        let picker_popView = Bundle.main.loadNibNamed("DatePickerPopView", owner: nil, options: nil)![0] as! DatePickerPopView
-        picker_popView.delegate = self
-        picker_popView.setMinimumDate(_date: Date())
-        self.view.addSubview(picker_popView)
-
-    }
-    @IBAction func searchBusesAction(_ sender: UIButton) {
-        
-        //search flight
-        let whitespace = CharacterSet.whitespacesAndNewlines
-        var messageStr = ""
-
-        if tf_bSource.text?.count == 0 || tf_bSource.text?.trimmingCharacters(in: whitespace).count == 0 {
-            messageStr = "Please select departure city"
-
-        } else if tf_bDestination.text?.count == 0 || tf_bDestination.text?.trimmingCharacters(in: whitespace).count == 0 {
-            messageStr = "Please select destination city"
-        }
-        else if tf_bSource.text == tf_bDestination.text {
-            messageStr = "The destination from and to cannot be the same"
-        }
-        if messageStr.count != 0 {
-
-            self.view.makeToast(message: messageStr)
-        } else {
-            moveToSearchBusses()
-        }
-    }
-    func moveToSearchBusses(){
-        DBTravelModel.sourceCity =   bSourceCity!
-        DBTravelModel.destinationCity = bDestinationCity!
-        DBTravelModel.departDate = bDepartDate
-        
-        //movel to buses list....
-        let vc = BUS_STORYBOARD.instantiateViewController(withIdentifier: "BusesSearchListVC") as! BusesSearchListVC
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-}
+//extension HomeVC {
+//    func updateDepartDateUI() {
+//        lbl_bSelectedDate.text = DateFormatter.getDateString(formate: "dd MMM, yyyy", date: departDate)
+//
+//    }
+//    func updateBusDepartDestinationCity(){
+//        tf_bSource.text = bSourceCity?["label"] as? String ?? ""
+//        tf_bDestination.text = bDestinationCity?["label"] as? String ?? ""
+//
+//    }
+//    func moveToBusCitiesSelection(){
+//        let searchObj = BUS_STORYBOARD.instantiateViewController(withIdentifier: "BSearchCitiesVC") as! BSearchCitiesVC
+//        searchObj.delegate = self
+//        self.present(searchObj, animated: true, completion: nil)
+//    }
+//    @IBAction func busSourceButtonAction(_ sender: Any) {
+//        // selelect source city
+//        cityIndex = 1
+//        moveToBusCitiesSelection()
+//    }
+//    @IBAction func busDestinationButtonAction(_ sender: Any) {
+//        //select destination city
+//        cityIndex = 2
+//        moveToBusCitiesSelection()
+//    }
+//    
+//    @IBAction func switchBusLocationAction(_ sender: Any) {
+//        //switch loaction button action
+//        if tf_bSource.text?.isEmpty == true {
+//            self.view.makeToast(message: "Please Select Departure")
+//            
+//        } else if tf_bDestination.text?.isEmpty == true  {
+//            
+//            self.view.makeToast(message: "Please Select Destination")
+//            
+//        } else {
+//            let tempCity = tf_bSource.text
+//            tf_bSource.text = tf_bDestination.text
+//            tf_bDestination.text = tempCity
+//            let tempCities = bSourceCity
+//            bSourceCity = bDestinationCity
+//            bDestinationCity = tempCities
+//        }
+//    }
+//    @IBAction func selectDateAction(_ sender: Any) {
+//        module = .Bus
+//        let picker_popView = Bundle.main.loadNibNamed("DatePickerPopView", owner: nil, options: nil)![0] as! DatePickerPopView
+//        picker_popView.delegate = self
+//        picker_popView.setMinimumDate(_date: Date())
+//        self.view.addSubview(picker_popView)
+//
+//    }
+//    @IBAction func searchBusesAction(_ sender: UIButton) {
+//        
+//        //search flight
+//        let whitespace = CharacterSet.whitespacesAndNewlines
+//        var messageStr = ""
+//
+//        if tf_bSource.text?.count == 0 || tf_bSource.text?.trimmingCharacters(in: whitespace).count == 0 {
+//            messageStr = "Please select departure city"
+//
+//        } else if tf_bDestination.text?.count == 0 || tf_bDestination.text?.trimmingCharacters(in: whitespace).count == 0 {
+//            messageStr = "Please select destination city"
+//        }
+//        else if tf_bSource.text == tf_bDestination.text {
+//            messageStr = "The destination from and to cannot be the same"
+//        }
+//        if messageStr.count != 0 {
+//
+//            self.view.makeToast(message: messageStr)
+//        } else {
+//            moveToSearchBusses()
+//        }
+//    }
+//    func moveToSearchBusses(){
+//        DBTravelModel.sourceCity =   bSourceCity!
+//        DBTravelModel.destinationCity = bDestinationCity!
+//        DBTravelModel.departDate = bDepartDate
+//        
+//        //movel to buses list....
+//        let vc = BUS_STORYBOARD.instantiateViewController(withIdentifier: "BusesSearchListVC") as! BusesSearchListVC
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
+//}
 //MARK: Bus Delegates
-extension HomeVC : searchBusesCitiesDelegate {
-    
-    func searchBus_info(busInfo: [String : Any]) {
-        
-        if cityIndex == 1 {
-            
-            // dispaly from city...
-            bSourceCity = busInfo
-            tf_bSource.text = busInfo["label"] as? String ?? ""
-        }
-        else if cityIndex == 2 {
-            
-            // display to city...
-            bDestinationCity = busInfo
-            tf_bDestination.text = busInfo["label"] as? String ?? ""
-        }
-
-    }
-}
+//extension HomeVC : searchBusesCitiesDelegate {
+//    
+//    func searchBus_info(busInfo: [String : Any]) {
+//        
+//        if cityIndex == 1 {
+//            
+//            // dispaly from city...
+//            bSourceCity = busInfo
+//            tf_bSource.text = busInfo["label"] as? String ?? ""
+//        }
+//        else if cityIndex == 2 {
+//            
+//            // display to city...
+//            bDestinationCity = busInfo
+//            tf_bDestination.text = busInfo["label"] as? String ?? ""
+//        }
+//
+//    }
+//}
 
 //MARK: Flights
 extension HomeVC {
@@ -622,26 +622,28 @@ extension HomeVC {
     func updateFlightTripTypeUI(forTag tag: Int) {
         
         for childView in view_flightTripType.subviews {
-            for childSubView in childView.subviews {
-                childView.backgroundColor = .white
+            // 1. Cast childView to your custom @IBDesignable class CRView
+            guard let crView = childView as? CRView else { continue }
+            
+            let isSelected = crView.tag == tag
+            
+            // 2. Safely apply your custom designable properties directly
+            crView.backgroundColor = isSelected ? UIColor(hexString: "#BB060A") : .white
+            crView.borderWidth = isSelected ? 0 : 1
+            crView.borderColor = isSelected ? UIColor(hexString: "#BB060A") : UIColor(hexString: "#003B95")
+            
+            // If you want to dynamically adjust cornerRadius or maskBounds on selection, do it here:
+            crView.cornerRadius = 8
+            crView.maskBounds = true
+            
+            // 3. Update the labels and images inside this view
+            for childSubView in crView.subviews {
                 if let lbl = childSubView as? UILabel {
-                    lbl.textColor = UIColor(hexString: "#003B95")
+                    lbl.textColor = isSelected ? UIColor(hexString: "#FFFFFF") : UIColor(hexString: "#003B95")
                 }
                 if let imageView = childSubView as? UIImageView {
-                    imageView.image = UIImage(named: "ic_circle_white")
+                    imageView.image = UIImage(named: isSelected ? "ic_circle_fill_white" : "ic_circle_white")
                     imageView.contentMode = .scaleToFill
-                }
-                childView.layer.borderWidth = 1
-                if childView.tag == tag {
-                    if let imageView = childSubView as? UIImageView {
-                        imageView.image = UIImage(named: "ic_circle_fill_white")
-                    }
-                    if let lbl = childSubView as? UILabel {
-                        lbl.textColor = UIColor(hexString: "#FFFFFF")
-                    }
-                    childView.backgroundColor = UIColor(hexString: "#BB060A")
-                    childView.layer.borderWidth = 0
-                    childView.layer.borderColor = UIColor(hexString: "#BB060A").cgColor
                 }
             }
         }
@@ -652,26 +654,21 @@ extension HomeVC {
         view_returnDate.isUserInteractionEnabled = false
         
         view_oneWayRound.isHidden = true
-        //        view_offers.isHidden = true
         view_flights.isHidden = false
         view_multiCity.isHidden = true
         
         if tag == 12 {
-            
             DTravelModel.tripType = .Multi
             view_multiCity.isHidden = false
-            addCities_HConstraint.constant = CGFloat(289 * mulityCititesListArray.count) // + 96
-            
+            addCities_HConstraint.constant = CGFloat(289 * mulityCititesListArray.count)
             
             tbl_multiCity.reloadData()
             tbl_multiCity.layoutIfNeeded()
             
-            //self.hotel_height.constant = addCities_HConstraint.constant + 100/*368*/
             print("hotel_height :\(hotel_height.constant)")
         } else {
             view_flights.isHidden = false
             view_oneWayRound.isHidden = false
-            //self.hotel_height.constant = 774 //674/*738*/
             print("hotel_height :\(hotel_height.constant)")
             
             if tag == 11 {
@@ -692,13 +689,14 @@ extension HomeVC {
             self.view.layoutIfNeeded()
         }
     }
+
     
     // MARK: - OBJC Function
-    @objc func clearBusInfoAfterBooking(){
-        tf_bSource.text = ""
-        tf_bDestination.text = ""
-        bDepartDate = Date()
-    }
+//    @objc func clearBusInfoAfterBooking(){
+//        tf_bSource.text = ""
+//        tf_bDestination.text = ""
+//        bDepartDate = Date()
+//    }
     @objc func clearInformationAfterBooking() {
         
         // flight Trip Types colors changing...
@@ -1181,21 +1179,23 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         
 //        self.hotel_height.constant = 774/*738*/
         self.selectedIndex = indexPath // Save selected index
-        if self.selectedIndex.row == 2 {
-            self.module = .Bus
-            
-            self.view_Flight.isHidden = true
-            self.view_Hotel.isHidden = true
-            self.view_transfer.isHidden = false
-            self.hotel_height.constant =   412
-            DTravelModel.moduleType = .Bus
-        } else if self.selectedIndex.row == 1 {
+//        if self.selectedIndex.row == 2 {
+//            self.module = .Bus
+//            
+//            self.view_Flight.isHidden = true
+//            self.view_Hotel.isHidden = true
+//            self.view_transfer.isHidden = false
+//            self.hotel_height.constant =   412
+//            DTravelModel.moduleType = .Bus
+//        }
+//        else
+        if self.selectedIndex.row == 1 {
             
             self.module = .Hotel
             DTravelModel.moduleType = .Hotel
             self.view_Flight.isHidden = true
             self.view_Hotel.isHidden = false
-            self.view_transfer.isHidden = true
+//            self.view_transfer.isHidden = true
             
             self.hotel_height.constant = 412
         }
@@ -1205,7 +1205,7 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
             DTravelModel.moduleType = .Flight
             self.view_Hotel.isHidden = true
             self.view_Flight.isHidden = false
-            self.view_transfer.isHidden = true
+//            self.view_transfer.isHidden = true
             self.updateFlightTripTypeUI(forTag: 10)
             
         }
@@ -1762,15 +1762,17 @@ extension HomeVC :  DPickerPopViewDelegate {
             
             updateCheckInCheckOutDates(isFirst: false)
             
-        } else if module == .Bus {
-            bDepartDate = _date
-            DBTravelModel.departDate = _date
-//            DActivityTravelModel.departDate = _date
-            
-            
-            calSelectedDate = _date
-            lbl_bSelectedDate.text = DateFormatter.getDateString(formate: "dd MMM yyyy", date: calSelectedDate)
-        } else {
+        }
+//        else if module == .Bus {
+//            bDepartDate = _date
+//            DBTravelModel.departDate = _date
+////            DActivityTravelModel.departDate = _date
+//            
+//            
+//            calSelectedDate = _date
+//            lbl_bSelectedDate.text = DateFormatter.getDateString(formate: "dd MMM yyyy", date: calSelectedDate)
+//        }
+        else {
             if DTravelModel.tripType == .Multi {
                 
                 let index = cityIndex - 100

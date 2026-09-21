@@ -23,12 +23,12 @@ protocol PromoCodeDelegate {
     func selectedPromoCode(promoCode: DCommonTopOfferItems)
 }
 
-protocol BoardingPointsDelegate{
-    func selectedBoardingPoint(model: DPickupDropItem)
-}
-protocol DropingPointDelegate {
-    func selctedDropPoint(model: DPickupDropItem)
-}
+//protocol BoardingPointsDelegate{
+//    func selectedBoardingPoint(model: DPickupDropItem)
+//}
+//protocol DropingPointDelegate {
+//    func selctedDropPoint(model: DPickupDropItem)
+//}
 
 //MARK: - Enums
 enum PackageType {
@@ -57,8 +57,8 @@ class ToursPackageView: UIView {
     var packageDurationArray : [Any] = []
     var packageAmountArray : [String] = []
     var facility_array: [String] = []
-    var boardingPointArray : [DPickupDropItem] = []
-    var dropPointArray : [DPickupDropItem] = []
+//    var boardingPointArray : [DPickupDropItem] = []
+//    var dropPointArray : [DPickupDropItem] = []
 
     
     var promoCodeArray : [DCommonTopOfferItems] = []
@@ -67,8 +67,8 @@ class ToursPackageView: UIView {
     var allTypDelegate: PackageAmountDelegate?
     var countryDelegate : CountryNamesDelegate?
     var promoCodeDelegate : PromoCodeDelegate?
-    var boardingDelegate : BoardingPointsDelegate?
-    var droppingDelegate : DropingPointDelegate?
+//    var boardingDelegate : BoardingPointsDelegate?
+//    var droppingDelegate : DropingPointDelegate?
 
     //MARK: - Override Methods
     override func draw(_ rect: CGRect) {
@@ -118,16 +118,17 @@ class ToursPackageView: UIView {
             lbl_title.text = "Facilities"
             tblHeight = (facility_array.count * 45) + 50
 
-        }else if packageType == .BoardingPoints {
-            lbl_title.text = "Select Boarding Point"
-            tblHeight =  (boardingPointArray.count * 70) + 90
-            viewWidth.constant = self.bounds.width - 40
-
-        }else if packageType == .DropPoints {
-            lbl_title.text = "Select Dropping Point"
-            tblHeight = (dropPointArray.count * 70) + 90
-            viewWidth.constant = self.bounds.width - 40
         }
+//        else if packageType == .BoardingPoints {
+//            lbl_title.text = "Select Boarding Point"
+//            tblHeight =  (boardingPointArray.count * 70) + 90
+//            viewWidth.constant = self.bounds.width - 40
+//
+//        }else if packageType == .DropPoints {
+//            lbl_title.text = "Select Dropping Point"
+//            tblHeight = (dropPointArray.count * 70) + 90
+//            viewWidth.constant = self.bounds.width - 40
+//        }
         if maxHeight >= Float(tblHeight) {
             tbl_HConstraint.constant = CGFloat(tblHeight)
             tbl_pakage.isScrollEnabled = false
@@ -158,11 +159,12 @@ extension ToursPackageView : UITableViewDelegate, UITableViewDataSource {
         } else if packageType == .AllFacilities{
             count = facility_array.count
 
-        } else if packageType == .BoardingPoints {
-            count = boardingPointArray.count
-        } else if packageType == .DropPoints {
-            count = dropPointArray.count
         }
+//          else if packageType == .BoardingPoints {
+//            count = boardingPointArray.count
+//        } else if packageType == .DropPoints {
+//            count = dropPointArray.count
+//        }
         else {
             count = 1
         }
@@ -208,13 +210,14 @@ extension ToursPackageView : UITableViewDelegate, UITableViewDataSource {
 //            cell?.lbl_citiesName.text = countryArray[indexPath.row].name
         } else if packageType == .PromoCodes {
             cell?.lbl_citiesName.text = promoCodeArray[indexPath.row].promoCode
-        }else if packageType == .BoardingPoints {
-            cell?.lbl_citiesName.numberOfLines = 0
-            cell?.lbl_citiesName.text = "\( boardingPointArray[indexPath.row].time ?? "") - \(boardingPointArray[indexPath.row].name ?? "")"
-        }else if packageType == .DropPoints {
-            cell?.lbl_citiesName.numberOfLines = 0
-            cell?.lbl_citiesName.text = "\( dropPointArray[indexPath.row].time ?? "") - \(dropPointArray[indexPath.row].name ?? "")"
         }
+//        else if packageType == .BoardingPoints {
+//            cell?.lbl_citiesName.numberOfLines = 0
+//            cell?.lbl_citiesName.text = "\( boardingPointArray[indexPath.row].time ?? "") - \(boardingPointArray[indexPath.row].name ?? "")"
+//        }else if packageType == .DropPoints {
+//            cell?.lbl_citiesName.numberOfLines = 0
+//            cell?.lbl_citiesName.text = "\( dropPointArray[indexPath.row].time ?? "") - \(dropPointArray[indexPath.row].name ?? "")"
+//        }
             cell?.selectionStyle = .none
             return cell!
             
@@ -240,13 +243,14 @@ extension ToursPackageView : UITableViewDelegate, UITableViewDataSource {
         } else if packageType == .PromoCodes {
             promoCodeDelegate?.selectedPromoCode(promoCode: promoCodeArray[indexPath.row])
             self.isHidden = true
-        }else if packageType == .BoardingPoints {
-            boardingDelegate?.selectedBoardingPoint(model: boardingPointArray[indexPath.row])
-            self.isHidden = true
-        }else if packageType == .DropPoints {
-            droppingDelegate?.selctedDropPoint(model: dropPointArray[indexPath.row])
-            self.isHidden = true
-
         }
+//        else if packageType == .BoardingPoints {
+//            boardingDelegate?.selectedBoardingPoint(model: boardingPointArray[indexPath.row])
+//            self.isHidden = true
+//        }else if packageType == .DropPoints {
+//            droppingDelegate?.selctedDropPoint(model: dropPointArray[indexPath.row])
+//            self.isHidden = true
+//
+//        }
     }
 }
